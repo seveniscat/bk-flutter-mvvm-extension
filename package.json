@@ -2,7 +2,7 @@
   "name": "bk-flutter-mvvm-extension",
   "displayName": "bk-flutter-mvvm-extension",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.97.0"
   },
@@ -20,17 +20,16 @@
     "type": "git",
     "url": "https://github.com/seveniscat/bk-flutter-mvvm-extension.git"
   },
-  "publisher": "bz.bloks",
+  "publisher": "bzbloks",
   "icon": "logo.png",
   "main": "./out/extension.js",
   "activationEvents": [
-    "workspaceContains:**/pubspec.yaml"
   ],
   "contributes": {
     "commands": [
       {
         "command": "extension.new-blk-page",
-        "title": "blk: Full Page"
+        "title": "blk: Full Page 2"
       }
     ],
     "menus": {
@@ -52,6 +51,7 @@
     "test": "vscode-test"
   },
   "devDependencies": {
+    "@types/change-case": "^2.3.1",
     "@types/js-yaml": "^3.12.1",
     "@types/lodash": "^4.14.182",
     "@types/mkdirp": "^0.5.2",
@@ -67,12 +67,11 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "change-case": "^5.4.4",
+    "change-case": "^3.1.0",
     "jimp": "^0.22.12",
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.19",
     "mkdirp": "^0.5.1",
     "semver": "^6.3.0"
-  },
-  "type": "module"
+  }
 }

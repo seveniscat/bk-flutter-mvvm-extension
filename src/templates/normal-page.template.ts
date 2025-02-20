@@ -1,6 +1,5 @@
-import * as changeCase from "change-case";
 import { writeFile } from "fs";
-
+const changeCase = require("change-case");
 export function indexTemplate(pageName: string, targetDirectory: string) {
   const pascalCaseName = changeCase.pascalCase(pageName.toLowerCase());
   const snakeCaseName = changeCase.snakeCase(pageName.toLowerCase());
