@@ -24,12 +24,13 @@
   "icon": "logo.png",
   "main": "./out/extension.js",
   "activationEvents": [
+    "workspaceContains:**/pubspec.yaml"
   ],
   "contributes": {
     "commands": [
       {
         "command": "extension.new-blk-page",
-        "title": "blk: Full Page 2"
+        "title": "blk: Full Page"
       }
     ],
     "menus": {
