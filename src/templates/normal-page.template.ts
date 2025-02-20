@@ -1,5 +1,5 @@
 import * as changeCase from "change-case";
-import { existsSync, lstatSync, writeFile } from "fs";
+import { writeFile } from "fs";
 
 export function indexTemplate(pageName: string, targetDirectory: string) {
   const pascalCaseName = changeCase.pascalCase(pageName.toLowerCase());
